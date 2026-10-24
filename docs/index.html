@@ -30,9 +30,9 @@
       <section class="guide"><span class="guide-icon">↳</span><div><h2>Seu primeiro teste começa aqui</h2><p>Comece por Web · Júnior. Leia o enunciado, tente implementar e compare com o PDF. Os arquivos são modelos para completar; execute os testes no VS Code.</p></div><button type="button" id="start-web">Explorar Web Júnior →</button></section>
       <section id="katas" class="exercise-section">
         <p class="eyebrow">PRATIQUE COM FEEDBACK</p><h2>Katas com testes e resolução</h2>
-        <p>11 desafios complementares e autorais. Escreva a solução, execute os testes e compare com uma resolução explicada. Web usa o DOM real e SQL usa SQLite. API e Mobile usam dados simulados.</p>
-        <label>Área do kata <select id="kata-category"><option value="">Todas as áreas</option><option value="fundamentos">Fundamentos</option><option value="web">Web</option><option value="api">API</option><option value="sql">SQL</option><option value="mobile">Mobile</option></select></label>
-        <p id="kata-progress" role="status">Carregando katas…</p><div id="kata-cards" class="grid"></div>
+        <p>Desafios complementares e autorais. Escreva a solução, execute os testes e compare com uma resolução explicada. Web usa o DOM real e SQL usa SQLite. API e Mobile usam dados simulados.</p>
+        <div class="kata-filters"><label>Buscar kata<input type="search" id="kata-search" placeholder="Ex.: permissões, parâmetros, pedidos…"></label><label>Área do kata <select id="kata-category"><option value="">Todas as áreas</option><option value="fundamentos">Fundamentos</option><option value="web">Web</option><option value="api">API</option><option value="sql">SQL</option><option value="mobile">Mobile</option></select></label><label>Progresso<select id="kata-status"><option value="">Todos</option><option value="pending">Para praticar</option><option value="passed">Aprovados</option></select></label></div>
+        <p id="kata-progress" role="status">Carregando katas…</p><p id="kata-count" role="status"></p><div id="kata-cards" class="grid"></div>
       </section>
       <section id="exercicios" class="exercise-section">
         <div class="section-heading"><div><p class="eyebrow">ESCOLHA SEU PRÓXIMO DESAFIO</p><h2>Biblioteca de exercícios</h2></div><div class="progress"><span id="progress-label">0 de 269 concluídos</span><progress id="progress" value="0" max="269">0</progress></div></div>
@@ -48,7 +48,7 @@
 <h2 id="kata-title"></h2><p id="kata-task"></p><details><summary>Contrato e casos de teste</summary><ol id="kata-cases"></ol></details>
 <label for="kata-editor">Sua solução</label><textarea id="kata-editor" spellcheck="false" autocapitalize="off" autocomplete="off"></textarea>
 <p class="dialog-note">Rascunho salvo neste navegador. JavaScript e SQL executam em worker com limite de 8 segundos. Nos katas Web, evite loops sem fim: o DOM usa a thread do navegador. A aprovação vale para os casos apresentados.</p>
-<div class="dialog-actions"><button type="button" class="primary" id="kata-run">Executar testes</button><button type="button" id="kata-reset">Reiniciar código</button></div>
+<div class="dialog-actions"><button type="button" class="primary" id="kata-run">Executar testes</button><button type="button" id="kata-reset">Reiniciar código</button><button type="button" id="kata-next">Próximo da área →</button></div>
 <div id="kata-output" role="status" aria-live="polite"></div>
 <details id="kata-solution"><summary>Ver resolução explicada</summary><pre><code id="kata-solution-code"></code></pre><p id="kata-explanation"></p></details></dialog>
 </body>

@@ -9,14 +9,21 @@
   function render() {
     const container = get('kata-cards'); container.replaceChildren();
     const category = get('kata-category').value;
-    for (const kata of katas.filter(k => !category || k.categoria === category)) {
+    const query = get('kata-search').value.trim().normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    const status = get('kata-status').value;
+    const visible = katas.filter(k => (!category || k.categoria === category) &&
+      (!query || `${k.titulo} ${k.enunciado}`.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().includes(query)) &&
+      (!status || (status === 'passed' ? state.passed[k.id] : !state.passed[k.id])));
+    for (const kata of visible) {
       const card = node('article', ''); card.className = 'card';
       card.append(node('span', kata.categoria.toUpperCase() + ' · ' + (kata.engine === 'sql' ? 'SQLite' : 'JavaScript')));
       card.append(node('h3', kata.titulo));
       card.append(node('p', `${kata.testes.length} testes · ${state.passed[kata.id] ? '✓ Aprovado' : 'Para praticar'}`));
       const button = node('button', 'Resolver kata →'); button.onclick = () => open(kata); card.append(button); container.append(card);
     }
+    if (!visible.length) container.append(node('p', 'Nenhum kata encontrado. Ajuste a busca ou os filtros.'));
     get('kata-progress').textContent = `${katas.filter(k => state.passed[k.id]).length} de ${katas.length} katas aprovados`;
+    get('kata-count').textContent = `${visible.length} katas encontrados`;
   }
   function stop() {
     if (!running) return;
@@ -30,10 +37,16 @@
     get('kata-solution-code').textContent = kata.solucao;
     get('kata-explanation').textContent = kata.explicacao;
     get('kata-solution').open = false;
+    get('kata-next').disabled = !nextKata(kata);
     get('kata-output').textContent = 'Escreva sua solução e execute os testes. Todos os casos abaixo são públicos.';
     get('kata-cases').replaceChildren(...kata.testes.map((t, i) => node('li', `Teste ${i + 1}: entrada ${JSON.stringify(t.entrada)} → esperado ${JSON.stringify(t.esperado)}`)));
     get('kata-dialog').showModal();
   }
+  function nextKata(kata) {
+    const area = katas.filter(k => k.categoria === kata.categoria);
+    return area[area.indexOf(kata) + 1];
+  }
+  get('kata-next').onclick = () => { const next = active && nextKata(active); if (next) open(next); };
   get('kata-editor').addEventListener('input', () => {
     if (!active) return;
     stop(); state.drafts[active.id] = get('kata-editor').value;
@@ -44,6 +57,8 @@
   get('kata-close').onclick = () => get('kata-dialog').close();
   get('kata-dialog').addEventListener('close', stop);
   get('kata-category').onchange = render;
+  get('kata-search').oninput = render;
+  get('kata-status').onchange = render;
   get('kata-run').onclick = async () => {
     if (!active || running) return;
     const kata = active, code = get('kata-editor').value;
@@ -85,7 +100,18 @@
       if (data.error) { output.textContent = 'Erro: ' + data.error; return; }
       const passed = data.results.filter(r => r.passed).length;
       output.append(node('strong', `${passed}/${run.kata.testes.length} testes passaram.`));
-      for (const result of data.results) output.append(node('p', `${result.passed ? '✓' : '✗'} Teste ${result.index + 1}: ${result.error || 'recebido ' + result.actual}`));
+      for (const result of data.results) {
+        const row = node('div', ''); row.className = result.passed ? 'test-pass' : 'test-fail';
+        row.append(node('p', `${result.passed ? '✓ Passou' : '✗ Falhou'} · Teste ${result.index + 1}`));
+        if (result.error) row.append(node('pre', 'Erro: ' + result.error));
+        else row.append(node('pre', 'Recebido: ' + result.actual));
+        if (!result.passed) {
+          const test = run.kata.testes[result.index];
+          row.append(node('pre', 'Esperado: ' + JSON.stringify(test.esperado)));
+          row.append(node('pre', 'Entrada: ' + JSON.stringify(test.entrada)));
+        }
+        output.append(row);
+      }
       state.passed[run.kata.id] = passed === run.kata.testes.length; save(); render();
     }
   }

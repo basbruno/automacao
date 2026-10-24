@@ -31,7 +31,7 @@ self.addEventListener('message', async (event) => {
           if (output.length > 1) throw new Error('Retorne exatamente uma consulta SELECT.');
           const statement = db.prepare(code);
           const names = statement.getColumnNames(); statement.free();
-          const columns = kata.id === 'sql-active' ? ['id', 'nome'] : ['cliente', 'total'];
+          const columns = kata.colunas;
           if (!same(names, columns)) throw new Error('Colunas esperadas: ' + columns.join(', '));
           actual = output[0]?.values ?? [];
         } else {

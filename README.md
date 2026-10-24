@@ -21,7 +21,7 @@ node scripts/check_site.cjs
 
 ## Katas com testes e resolução
 
-[Pratique no portal](https://basbruno.github.io/automacao/#katas): 11 desafios autorais complementares ao PDF, com 3 fundamentos, 2 Web, 2 API, 2 SQL e 2 Mobile. Cada kata tem contrato, casos públicos, editor e resolução explicada. Rascunhos e aprovações ficam neste navegador. Alterar o código remove a aprovação anterior.
+[Pratique no portal](https://basbruno.github.io/automacao/#katas): 21 desafios autorais complementares ao PDF, com 5 fundamentos, 4 Web, 4 API, 4 SQL e 4 Mobile. Cada kata tem contrato, casos públicos, editor e resolução explicada. Use a busca, os filtros de área e progresso e o botão para avançar ao próximo desafio da área. Falhas mostram entrada, esperado e recebido. Rascunhos e aprovações ficam neste navegador. Alterar o código remove a aprovação anterior.
 
 JavaScript e SQLite executam em Web Workers encerrados após 8 segundos. Web usa DOMParser em iframe com sandbox; loops síncronos infinitos nesse modo podem bloquear a aba. API e Mobile usam dados simulados, sem servidor, Appium ou dispositivo. Os 269 exercícios originais continuam como modelos para execução local. A aprovação vale para os casos públicos apresentados.
 
