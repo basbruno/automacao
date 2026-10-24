@@ -2,6 +2,7 @@
 import json
 import shutil
 from pathlib import Path
+from build_katas import build_katas
 
 ROOT = Path(__file__).resolve().parent.parent
 OUTPUT = ROOT / 'docs'
@@ -16,8 +17,10 @@ def build():
             raise ValueError('Arquivo fora do projeto')
         item['codigo'] = source.read_text(encoding='utf-8')
     OUTPUT.mkdir(exist_ok=True)
-    for name in ('index.html', 'styles.css', 'app.js'):
+    for name in ('index.html', 'styles.css', 'app.js', 'katas.js', 'runner.html', 'runner-core.js', 'runner-worker.js'):
         shutil.copyfile(ROOT / 'site' / name, OUTPUT / name)
+    shutil.copytree(ROOT / 'site/vendor', OUTPUT / 'vendor', dirs_exist_ok=True)
+    (OUTPUT / 'katas.json').write_text(json.dumps(build_katas(), ensure_ascii=False), encoding='utf-8')
     (OUTPUT / 'exercicios.json').write_text(json.dumps(records, ensure_ascii=False), encoding='utf-8')
     (OUTPUT / '.nojekyll').touch()
     print(f'Portal gerado em docs/: {len(records)} exercícios.')

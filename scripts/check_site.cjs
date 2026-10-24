@@ -22,12 +22,12 @@ const server = http.createServer((req, res) => {
     const errors = []; page.on('pageerror', (error) => errors.push(error.message));
     await page.goto(`http://127.0.0.1:${server.address().port}/`);
     await page.getByText('269 exercícios encontrados', { exact: true }).waitFor();
-    assert.equal(await page.locator('.card').count(), 18);
+    assert.equal(await page.locator('#cards .card').count(), 18);
     await page.locator('#start-web').click();
     await page.getByText('40 exercícios encontrados', { exact: true }).waitFor();
     await page.locator('#search').fill('título da página');
     await page.getByText('1 exercícios encontrados', { exact: true }).waitFor();
-    await page.locator('.card button').click();
+    await page.locator('#cards .card button').click();
     await page.locator('#editor').fill('// meu rascunho de estudo');
     await page.locator('#complete').click();
     const downloadPromise = page.waitForEvent('download');
@@ -37,13 +37,13 @@ const server = http.createServer((req, res) => {
     await page.locator('#close-dialog').click();
     await page.reload();
     await page.getByText('1 de 269 concluídos', { exact: true }).waitFor();
-    await page.locator('.card button').first().click();
+    await page.locator('#cards .card button').first().click();
     assert.equal(await page.locator('#editor').inputValue(), '// meu rascunho de estudo');
     await page.locator('#close-dialog').click();
     for (const width of [390, 768]) {
       await page.locator(`[data-width="${width}"]`).click();
       const frame = page.frameLocator('#device-frame');
-      await frame.locator('.card').first().waitFor();
+      await frame.locator('#cards .card').first().waitFor();
       assert.equal(await frame.locator('body').evaluate(() => window.innerWidth), width);
       assert.ok(await frame.locator('body').evaluate(() => document.documentElement.scrollWidth <= window.innerWidth));
       assert.equal(await frame.locator('#preview-tools').isVisible(), false);

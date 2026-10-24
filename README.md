@@ -19,29 +19,23 @@ Para repetir a verificação das interações, com as dependências e o Chromium
 node scripts/check_site.cjs
 ```
 
-## Publicação em basbruno/automacao
+## Katas com testes e resolução
 
-O projeto está preparado para um repositório público chamado `basbruno/automacao`. A publicação remota ainda depende de autenticação nessa conta. O script abaixo cria o repositório, envia os arquivos e configura o GitHub Pages via Actions; ele interrompe se a conta autenticada ou o remoto não corresponder ao destino.
+[Pratique no portal](https://basbruno.github.io/automacao/#katas): 11 desafios autorais complementares ao PDF, com 3 fundamentos, 2 Web, 2 API, 2 SQL e 2 Mobile. Cada kata tem contrato, casos públicos, editor e resolução explicada. Rascunhos e aprovações ficam neste navegador. Alterar o código remove a aprovação anterior.
 
-No seu terminal Windows, instale o GitHub CLI:
+JavaScript e SQLite executam em Web Workers encerrados após 8 segundos. Web usa DOMParser em iframe com sandbox; loops síncronos infinitos nesse modo podem bloquear a aba. API e Mobile usam dados simulados, sem servidor, Appium ou dispositivo. Os 269 exercícios originais continuam como modelos para execução local. A aprovação vale para os casos públicos apresentados.
 
-```powershell
-winget install --id GitHub.cli -e
-```
-
-Reabra o terminal e autentique-se como **basbruno** pelo navegador:
+SQL usa SQLite via [sql.js 1.13.0](https://github.com/sql-js/sql.js), distribuído em `site/vendor/` com licença MIT. As soluções e os testes complementares ficam em `scripts/build_katas.py`. Para validar:
 
 ```powershell
-gh auth login --hostname github.com --git-protocol https --web
-gh api user --jq .login
-powershell -ExecutionPolicy Bypass -File .\publicar.ps1
+python scripts/build_site.py
+node scripts/check_katas.cjs
+node scripts/check_site.cjs
 ```
 
-O script faz push sem `--force`, usa um e-mail noreply no commit e publica somente o portal estático de `docs/`. Dependências, relatórios, arquivos de ambiente e o PDF ficam fora do Git. O material de referência continua disponível no seu computador.
+## Publicação
 
-Após a conclusão bem-sucedida do workflow, o endereço esperado será `https://basbruno.github.io/automacao/`. A existência desse endereço precisa ser confirmada após a publicação; preparar os arquivos localmente não ativa o site.
-
-O workflow segue a [documentação oficial de publicação do GitHub Pages com Actions](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
+O repositório é `basbruno/automacao`, com branch padrão `master`. Pushes nessa branch publicam o portal via `.github/workflows/pages.yml`. O script `publicar.ps1` permite repetir a configuração com o GitHub CLI autenticado como basbruno. Dependências, arquivos de ambiente, relatórios e PDFs ficam fora do Git.
 
 Material preparado a partir do PDF **Perca o Medo da Automação**, de Lilian Borba / QA Insider, disponível nesta pasta.
 
