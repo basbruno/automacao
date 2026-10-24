@@ -1,0 +1,13 @@
+// Exercício 085: Implementar retry estratégico apenas para falhas de infraestrutura
+// Nível: Sênior
+// PDF: perca-o-medo-da-automacao.pdf, página 99
+// Dica: Retry cego mascara bugs — retry inteligente evita flakiness
+import { test, expect } from "@playwright/test";
+
+// Troque test.skip por test depois de implementar o exercício.
+test.skip("WEB #085 — Implementar retry estratégico apenas para falhas de infraestrutura", async ({ page }) => {
+  // TODO: preparar os dados e o ambiente necessários.
+  // TODO: executar o cenário descrito no enunciado.
+  // TODO: verificar o resultado com expect e limpar os dados criados.
+  throw new Error("Exercício ainda não implementado.");
+});

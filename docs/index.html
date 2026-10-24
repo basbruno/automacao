@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Seu laboratório de automação: exercícios Web, API, SQL e Mobile organizados para aprender praticando.">
+  <title>Exercícios · Laboratório de QA</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="preview-tools" id="preview-tools">
+    <span>PRÉVIA RESPONSIVA</span>
+    <div role="group" aria-label="Largura de visualização">
+      <button type="button" data-width="desktop" aria-pressed="true">Desktop</button>
+      <button type="button" data-width="768" aria-pressed="false">Tablet · 768px</button>
+      <button type="button" data-width="390" aria-pressed="false">Celular · 390px</button>
+    </div>
+  </div>
+  <div id="device-stage" hidden><iframe id="device-frame" title="Prévia do portal em outra largura"></iframe></div>
+  <div id="portal">
+    <header class="header"><a class="brand" href="./"><span class="brand-icon">&lt;/&gt;</span> exercícios<span class="brand-dot">.</span></a><a href="https://github.com/basbruno/exercicios" target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a></header>
+    <main>
+      <section class="hero">
+        <div><p class="eyebrow">SEU LABORATÓRIO DE AUTOMAÇÃO</p><h1>Menos receio.<br>Mais <em>prática.</em></h1><p class="intro">Um exercício de cada vez. Explore os cenários, abra o código inicial e construa sua experiência em qualidade de software.</p><a class="primary" href="#exercicios">Começar a praticar <span>↗</span></a></div>
+        <aside class="terminal" aria-label="Como estudar"><div class="terminal-top"><span>● ● ●</span> seu próximo passo</div><div class="terminal-body"><p><span class="muted">01</span> <span class="green">ler</span> o cenário</p><p><span class="muted">02</span> <span class="green">escrever</span> o teste</p><p><span class="muted">03</span> <span class="green">executar</span> e verificar</p><p><span class="muted">04</span> <span class="green">aprender</span> com o resultado</p><div class="terminal-foot">&gt; progresso, não perfeição<span class="cursor">_</span></div></div></aside>
+      </section>
+      <section class="stats" aria-label="Conteúdo do laboratório"><div><strong>100</strong><span>Web</span></div><div><strong>83</strong><span>API</span></div><div><strong>35</strong><span>SQL</span></div><div><strong>51</strong><span>Mobile</span></div></section>
+      <section class="guide"><span class="guide-icon">↳</span><div><h2>Seu primeiro teste começa aqui</h2><p>Comece por Web · Júnior. Leia o enunciado, tente implementar e compare com o PDF. Os arquivos são modelos para completar; execute os testes no VS Code.</p></div><button type="button" id="start-web">Explorar Web Júnior →</button></section>
+      <section id="exercicios" class="exercise-section">
+        <div class="section-heading"><div><p class="eyebrow">ESCOLHA SEU PRÓXIMO DESAFIO</p><h2>Biblioteca de exercícios</h2></div><div class="progress"><span id="progress-label">0 de 269 concluídos</span><progress id="progress" value="0" max="269">0</progress></div></div>
+        <form class="filters" id="filters" role="search"><label class="search">Buscar exercício<input type="search" id="search" placeholder="Ex.: login, status code, consulta…"></label><label>Área<select id="category"><option value="">Todas as áreas</option><option value="web">Web</option><option value="api">API</option><option value="sql">SQL</option><option value="mobile">Mobile</option></select></label><label>Nível<select id="level"><option value="">Todos os níveis</option><option>Júnior</option><option>Pleno</option><option>Sênior</option></select></label><label>Progresso<select id="status"><option value="">Todos</option><option value="pending">Pendentes</option><option value="done">Concluídos</option></select></label></form>
+        <p class="results" id="results" role="status">Carregando exercícios…</p><div class="grid" id="cards"></div><div class="pagination"><button type="button" id="previous">← Anterior</button><span id="page-label"></span><button type="button" id="next">Próxima →</button></div>
+      </section>
+      <section class="study-note"><h2>Um espaço para estudar, no seu ritmo.</h2><p>O progresso e os rascunhos ficam neste navegador. O portal não executa testes nem sincroniza alterações com o GitHub. Baixe o arquivo para continuar no VS Code.</p><p>Baseado em <cite>Perca o Medo da Automação</cite>, de Lilian Borba / QA Insider. Consulte o seu PDF para os gabaritos. A numeração e as lacunas do material foram preservadas.</p></section>
+    </main>
+    <footer><span>exercícios. <span class="muted">Aprender fazendo.</span></span><span>Web · API · SQL · Mobile</span></footer>
+  </div>
+  <dialog id="exercise-dialog"><div class="dialog-heading"><span id="dialog-meta" class="eyebrow"></span><button type="button" id="close-dialog" aria-label="Fechar exercício">✕</button></div><h2 id="dialog-title"></h2><p id="dialog-hint"></p><p id="dialog-path" class="file-path"></p><label for="editor">Seu rascunho de código</label><textarea id="editor" spellcheck="false"></textarea><p id="save-message" role="status">O rascunho é salvo neste navegador.</p><div class="dialog-actions"><button type="button" class="primary" id="download">Baixar arquivo ↓</button><button type="button" id="complete">Marcar como concluído</button></div><p class="dialog-note">Implemente o cenário, retire a marcação de pendente e execute no seu ambiente local.</p></dialog>
+</body>
+</html>

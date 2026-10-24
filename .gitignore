@@ -1,0 +1,14 @@
+node_modules/
+.venv/
+__pycache__/
+.pytest_cache/
+playwright-report/
+test-results/
+blob-report/
+.env
+.env.*
+!.env.example
+*.pdf
+.tmp*
+artifacts/
+.tools/

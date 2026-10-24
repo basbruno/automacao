@@ -1,0 +1,2423 @@
+[
+  {
+    "categoria": "web",
+    "numero": "001",
+    "nivel": "Júnior",
+    "pagina": 54,
+    "enunciado": "Navegar para uma URL e verificar o título da página",
+    "dica": "Use page.goto() e page.title()",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_001_p54.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "002",
+    "nivel": "Júnior",
+    "pagina": 54,
+    "enunciado": "Clicar em um link pelo texto e verificar redirecionamento",
+    "dica": "Use page.click('text=...')",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_002_p54.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "003",
+    "nivel": "Júnior",
+    "pagina": 54,
+    "enunciado": "Preencher um campo de texto e verificar o valor inserido",
+    "dica": "Use page.fill() e page.inputValue()",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_003_p54.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "004",
+    "nivel": "Júnior",
+    "pagina": 55,
+    "enunciado": "Fazer login com credenciais válidas",
+    "dica": "Combine fill + click + expect",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_004_p55.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "005",
+    "nivel": "Júnior",
+    "pagina": 55,
+    "enunciado": "Verificar que mensagem de erro aparece com senha incorreta",
+    "dica": "Teste negativo — tão importante quanto o positivo",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_005_p55.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "006",
+    "nivel": "Júnior",
+    "pagina": 55,
+    "enunciado": "Verificar que um elemento está visível na página",
+    "dica": "Use toBeVisible()",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_006_p55.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "007",
+    "nivel": "Júnior",
+    "pagina": 56,
+    "enunciado": "Verificar que um elemento está desabilitado",
+    "dica": "Use toBeDisabled()",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_007_p56.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "008",
+    "nivel": "Júnior",
+    "pagina": 56,
+    "enunciado": "Clicar em um checkbox e verificar que está marcado",
+    "dica": "Use page.check() e toBeChecked()",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_008_p56.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "009",
+    "nivel": "Júnior",
+    "pagina": 56,
+    "enunciado": "Selecionar uma opção em um dropdown pelo valor",
+    "dica": "Use page.selectOption()",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_009_p56.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "010",
+    "nivel": "Júnior",
+    "pagina": 56,
+    "enunciado": "Verificar o texto de um elemento específico",
+    "dica": "Use toContainText() ou toHaveText()",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_010_p56.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "011",
+    "nivel": "Júnior",
+    "pagina": 57,
+    "enunciado": "Tirar screenshot de uma página",
+    "dica": "Use page.screenshot()",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_011_p57.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "012",
+    "nivel": "Júnior",
+    "pagina": 57,
+    "enunciado": "Verificar a URL atual da página",
+    "dica": "Use expect(page).toHaveURL()",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_012_p57.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "013",
+    "nivel": "Júnior",
+    "pagina": 57,
+    "enunciado": "Contar quantos elementos de uma lista existem",
+    "dica": "Use locator.count()",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_013_p57.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "014",
+    "nivel": "Júnior",
+    "pagina": 58,
+    "enunciado": "Verificar que um elemento não está visível",
+    "dica": "Use toBeHidden() ou not.toBeVisible()",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_014_p58.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "015",
+    "nivel": "Júnior",
+    "pagina": 58,
+    "enunciado": "Obter e verificar um atributo de elemento",
+    "dica": "Use locator.getAttribute()",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_015_p58.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "016",
+    "nivel": "Júnior",
+    "pagina": 58,
+    "enunciado": "Navegar para trás e para frente no histórico",
+    "dica": "Use page.goBack() e page.goForward()",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_016_p58.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "017",
+    "nivel": "Júnior",
+    "pagina": 59,
+    "enunciado": "Limpar um campo de texto antes de preencher",
+    "dica": "Use page.fill() — ele já limpa antes de digitar",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_017_p59.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "018",
+    "nivel": "Júnior",
+    "pagina": 59,
+    "enunciado": "Verificar que a página contém um texto qualquer",
+    "dica": "Use page.locator('body').toContainText()",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_018_p59.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "019",
+    "nivel": "Júnior",
+    "pagina": 59,
+    "enunciado": "Acessar o segundo item de uma lista de elementos",
+    "dica": "Use locator.nth(1) — índice começa em 0",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_019_p59.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "020",
+    "nivel": "Júnior",
+    "pagina": 59,
+    "enunciado": "Verificar o número de links em uma página",
+    "dica": "Use page.locator('a').count()",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_020_p59.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "021",
+    "nivel": "Júnior",
+    "pagina": 60,
+    "enunciado": "Fazer upload de um arquivo via input file",
+    "dica": "Use locator.setInputFiles()",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_021_p60.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "022",
+    "nivel": "Júnior",
+    "pagina": 60,
+    "enunciado": "Verificar o título de uma aba (tab) do navegador",
+    "dica": "Use page.title()",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_022_p60.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "023",
+    "nivel": "Júnior",
+    "pagina": 60,
+    "enunciado": "Aguardar um elemento aparecer dinamicamente",
+    "dica": "Use waitFor() com timeout explícito",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_023_p60.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "024",
+    "nivel": "Júnior",
+    "pagina": 61,
+    "enunciado": "Verificar cor de um elemento com CSS",
+    "dica": "Use evaluate() para acessar estilos computados",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_024_p61.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "025",
+    "nivel": "Júnior",
+    "pagina": 61,
+    "enunciado": "Simular pressionamento de tecla Enter",
+    "dica": "Use page.press(locator, 'Enter')",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_025_p61.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "026",
+    "nivel": "Júnior",
+    "pagina": 61,
+    "enunciado": "Rolar a página até o rodapé",
+    "dica": "Use page.evaluate() com window.scrollTo",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_026_p61.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "027",
+    "nivel": "Júnior",
+    "pagina": 62,
+    "enunciado": "Verificar que um link abre em nova aba (_blank)",
+    "dica": "Use page.locator e getAttribute('target')",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_027_p62.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "028",
+    "nivel": "Júnior",
+    "pagina": 62,
+    "enunciado": "Aceitar um alert JavaScript",
+    "dica": "Use page.on('dialog') para interceptar",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_028_p62.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "029",
+    "nivel": "Júnior",
+    "pagina": 62,
+    "enunciado": "Confirmar ou cancelar um confirm JavaScript",
+    "dica": "Use dialog.accept() ou dialog.dismiss()",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_029_p62.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "030",
+    "nivel": "Júnior",
+    "pagina": 63,
+    "enunciado": "Preencher um prompt JavaScript com texto",
+    "dica": "Use dialog.accept(texto) para enviar valor",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_030_p63.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "031",
+    "nivel": "Júnior",
+    "pagina": 63,
+    "enunciado": "Testar hover em um elemento",
+    "dica": "Use locator.hover()",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_031_p63.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "032",
+    "nivel": "Júnior",
+    "pagina": 63,
+    "enunciado": "Verificar múltiplos atributos de uma tabela HTML",
+    "dica": "Use locator.nth() para acessar células",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_032_p63.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "033",
+    "nivel": "Júnior",
+    "pagina": 64,
+    "enunciado": "Verificar que um iframe existe e contém elemento",
+    "dica": "Use frameLocator() para acessar iframe",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_033_p64.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "034",
+    "nivel": "Júnior",
+    "pagina": 64,
+    "enunciado": "Verificar que página retorna erro 404 para URL inválida",
+    "dica": "Use page.goto() e verificar response.status()",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_034_p64.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "035",
+    "nivel": "Júnior",
+    "pagina": 64,
+    "enunciado": "Usar variáveis de ambiente em testes",
+    "dica": "Use process.env para não hardcodar credenciais",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_035_p64.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "036",
+    "nivel": "Júnior",
+    "pagina": 65,
+    "enunciado": "Executar o mesmo teste em múltiplos navegadores",
+    "dica": "Configure projects no playwright.config.js",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_036_p65.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "037",
+    "nivel": "Júnior",
+    "pagina": 65,
+    "enunciado": "Usar beforeEach para setup comum entre testes",
+    "dica": "Evite repetição de código de setup",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_037_p65.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "038",
+    "nivel": "Júnior",
+    "pagina": 66,
+    "enunciado": "Testar responsividade em viewport mobile",
+    "dica": "Use page.setViewportSize()",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_038_p66.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "039",
+    "nivel": "Júnior",
+    "pagina": 66,
+    "enunciado": "Verificar que elementos aparecem na ordem correta",
+    "dica": "Use locator.nth() para verificar sequência",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_039_p66.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "040",
+    "nivel": "Júnior",
+    "pagina": 66,
+    "enunciado": "Fazer logout após login e verificar redirecionamento",
+    "dica": "Complete o fluxo completo login",
+    "arquivo": "playwright/exercicios/web/junior/exercicio_040_p66.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "041",
+    "nivel": "Pleno",
+    "pagina": 67,
+    "enunciado": "Criar Page Object para a página de Login",
+    "dica": "Encapsule seletores e ações — o teste não deve saber como a página funciona",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_041_p67.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "042",
+    "nivel": "Pleno",
+    "pagina": 68,
+    "enunciado": "Usar fixtures do Playwright para estado autenticado",
+    "dica": "Evite refazer login em cada teste — use storageState",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_042_p68.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "043",
+    "nivel": "Pleno",
+    "pagina": 69,
+    "enunciado": "Parametrizar testes com test.each / data-driven",
+    "dica": "Teste o mesmo fluxo com múltiplos conjuntos de dados",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_043_p69.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "044",
+    "nivel": "Pleno",
+    "pagina": 69,
+    "enunciado": "Interceptar requisições de rede e verificar payload",
+    "dica": "Use page.route() ou page.waitForRequest()",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_044_p69.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "045",
+    "nivel": "Pleno",
+    "pagina": 70,
+    "enunciado": "Mockar uma resposta de API no teste E2E",
+    "dica": "Use page.route() para interceptar e retornar mock",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_045_p70.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "046",
+    "nivel": "Pleno",
+    "pagina": 70,
+    "enunciado": "Testar drag and drop",
+    "dica": "Use dragTo() ou mouse.down/move/up",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_046_p70.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "047",
+    "nivel": "Pleno",
+    "pagina": 71,
+    "enunciado": "Testar múltiplas janelas/abas simultaneamente",
+    "dica": "Use context.waitForEvent('page') para capturar nova aba",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_047_p71.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "048",
+    "nivel": "Pleno",
+    "pagina": 71,
+    "enunciado": "Testar campos de formulário com validação HTML5",
+    "dica": "Verifique mensagens de validação nativas do browser",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_048_p71.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "049",
+    "nivel": "Pleno",
+    "pagina": 72,
+    "enunciado": "Verificar acessibilidade básica com axe-core",
+    "dica": "Instale @axe-core/playwright",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_049_p72.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "050",
+    "nivel": "Pleno",
+    "pagina": 72,
+    "enunciado": "Usar soft assertions para verificar múltiplos pontos",
+    "dica": "Não interrompe no primeiro erro — vê todos os problemas",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_050_p72.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "051",
+    "nivel": "Pleno",
+    "pagina": 72,
+    "enunciado": "Extrair todos os textos de uma tabela para validação",
+    "dica": "Use locator.allTextContents()",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_051_p72.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "052",
+    "nivel": "Pleno",
+    "pagina": 73,
+    "enunciado": "Testar campo de busca com vários termos",
+    "dica": "Data-driven: mesmo fluxo, múltiplos dados",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_052_p73.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "053",
+    "nivel": "Pleno",
+    "pagina": 73,
+    "enunciado": "Implementar retry automático para elemento instável",
+    "dica": "Use expect com timeout customizado como alternativa a sleep",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_053_p73.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "054",
+    "nivel": "Pleno",
+    "pagina": 74,
+    "enunciado": "Testar fluxo completo de carrinho de compras",
+    "dica": "Teste E2E multi-passo — o mais próximo do usuário real",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_054_p74.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "055",
+    "nivel": "Pleno",
+    "pagina": 74,
+    "enunciado": "Testar infinite scroll",
+    "dica": "Simule scroll para baixo e verifique carregamento",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_055_p74.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "056",
+    "nivel": "Pleno",
+    "pagina": 75,
+    "enunciado": "Testar download de arquivo",
+    "dica": "Use page.waitForEvent('download')",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_056_p75.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "057",
+    "nivel": "Pleno",
+    "pagina": 75,
+    "enunciado": "Verificar que e-mail foi enviado (via API do serviço de email)",
+    "dica": "Use request fixture para chamar API do Mailtrap ou similar",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_057_p75.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "058",
+    "nivel": "Pleno",
+    "pagina": 76,
+    "enunciado": "Testar autenticação 2FA via TOTP",
+    "dica": "Use otplib para gerar código TOTP no teste",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_058_p76.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "059",
+    "nivel": "Pleno",
+    "pagina": 77,
+    "enunciado": "Criar helper para gerar dados de teste aleatórios",
+    "dica": "Isola geração de dados da lógica de teste",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_059_p77.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "060",
+    "nivel": "Pleno",
+    "pagina": 78,
+    "enunciado": "Testar paginação de uma listagem",
+    "dica": "Navegue entre páginas e verifique conteúdo diferente",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_060_p78.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "061",
+    "nivel": "Pleno",
+    "pagina": 78,
+    "enunciado": "Testar comportamento de sessão expirada",
+    "dica": "Simule expiração deletando cookies e verifique redirect",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_061_p78.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "062",
+    "nivel": "Pleno",
+    "pagina": 79,
+    "enunciado": "Verificar que campos obrigatórios são sinalizados visualmente",
+    "dica": "Borda vermelha ou ícone de erro — acessibilidade exige feedback visual",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_062_p79.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "063",
+    "nivel": "Pleno",
+    "pagina": 79,
+    "enunciado": "Testar shortcut de teclado na aplicação",
+    "dica": "Shortcuts são funcionalidade — devem ser testados",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_063_p79.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "064",
+    "nivel": "Pleno",
+    "pagina": 80,
+    "enunciado": "Verificar comportamento de autocomplete",
+    "dica": "Autocomplete tem timing — use waitFor ao invés de sleep",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_064_p80.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "065",
+    "nivel": "Pleno",
+    "pagina": 81,
+    "enunciado": "Testar upload múltiplo de arquivos",
+    "dica": "setInputFiles aceita array — use para múltiplos arquivos",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_065_p81.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "066",
+    "nivel": "Pleno",
+    "pagina": 82,
+    "enunciado": "Verificar ordenação de tabela ao clicar no cabeçalho",
+    "dica": "Sorting é funcionalidade de negócio — sempre teste",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_066_p82.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "067",
+    "nivel": "Pleno",
+    "pagina": 83,
+    "enunciado": "Testar filtros combinados em listagem",
+    "dica": "Múltiplos filtros ativos ao mesmo tempo",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_067_p83.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "068",
+    "nivel": "Pleno",
+    "pagina": 83,
+    "enunciado": "Verificar que modal fecha ao clicar fora",
+    "dica": "Comportamento esperado pelo usuário — mas quebra em muitos sistemas",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_068_p83.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "069",
+    "nivel": "Pleno",
+    "pagina": 84,
+    "enunciado": "Testar comportamento de timezone no datepicker",
+    "dica": "Datas são a fonte de bug mais subestimada em sistemas",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_069_p84.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "070",
+    "nivel": "Pleno",
+    "pagina": 85,
+    "enunciado": "Testar componente de rating/estrelas",
+    "dica": "Componentes customizados exigem hover antes do click",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_070_p85.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "071",
+    "nivel": "Pleno",
+    "pagina": 86,
+    "enunciado": "Testar comportamento offline com Service Worker",
+    "dica": "PWAs devem funcionar offline — verifique o fallback",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_071_p86.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "072",
+    "nivel": "Pleno",
+    "pagina": 87,
+    "enunciado": "Verificar que formulário salva rascunho automaticamente",
+    "dica": "Autosave é funcionalidade crítica em formulários longos",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_072_p87.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "073",
+    "nivel": "Pleno",
+    "pagina": 88,
+    "enunciado": "Testar impressão com CSS @media print",
+    "dica": "Verifique layout de impressão antes de reclamação do cliente",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_073_p88.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "074",
+    "nivel": "Pleno",
+    "pagina": 89,
+    "enunciado": "Testar que tabela exporta corretamente para CSV",
+    "dica": "Exportações de dados têm bugs de encoding e formatação",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_074_p89.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "075",
+    "nivel": "Pleno",
+    "pagina": 90,
+    "enunciado": "Verificar que página lida com parâmetros de URL maliciosos",
+    "dica": "XSS via URL é um dos vetores mais comuns",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_075_p90.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "076",
+    "nivel": "Pleno",
+    "pagina": 91,
+    "enunciado": "Testar lazy loading de imagens",
+    "dica": "Imagens com loading=lazy só carregam quando visíveis",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_076_p91.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "077",
+    "nivel": "Pleno",
+    "pagina": 91,
+    "enunciado": "Testar que notificação toast aparece e desaparece",
+    "dica": "Toasts têm lifecycle — aparece, fica, desaparece",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_077_p91.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "078",
+    "nivel": "Pleno",
+    "pagina": 92,
+    "enunciado": "Testar busca com resultados zerados",
+    "dica": "Empty state é UX — deve ter mensagem amigável, não tela em branco",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_078_p92.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "079",
+    "nivel": "Pleno",
+    "pagina": 93,
+    "enunciado": "Testar comportamento ao perder foco em campo com validação",
+    "dica": "Validação onBlur é diferente de onSubmit — teste os dois",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_079_p93.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "080",
+    "nivel": "Pleno",
+    "pagina": 94,
+    "enunciado": "Testar feature flag — funcionalidade ativa apenas para grupos",
+    "dica": "Feature flags mal testadas = rollout quebrado em produção",
+    "arquivo": "playwright/exercicios/web/pleno/exercicio_080_p94.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "081",
+    "nivel": "Sênior",
+    "pagina": 95,
+    "enunciado": "Implementar framework base com BaseTest e configurações globais",
+    "dica": "Encapsule setup/teardown e configurações compartilhadas",
+    "arquivo": "playwright/exercicios/web/senior/exercicio_081_p95.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "082",
+    "nivel": "Sênior",
+    "pagina": 96,
+    "enunciado": "Configurar relatório customizado com allure-playwright",
+    "dica": "Relatórios são evidência — configure do jeito certo",
+    "arquivo": "playwright/exercicios/web/senior/exercicio_082_p96.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "083",
+    "nivel": "Sênior",
+    "pagina": 97,
+    "enunciado": "Implementar visual regression testing com screenshots",
+    "dica": "Detecte quebras visuais automaticamente",
+    "arquivo": "playwright/exercicios/web/senior/exercicio_083_p97.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "084",
+    "nivel": "Sênior",
+    "pagina": 98,
+    "enunciado": "Criar teste de contrato de API com schema JSON",
+    "dica": "Valide estrutura da resposta, não só o conteúdo",
+    "arquivo": "playwright/exercicios/web/senior/exercicio_084_p98.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "085",
+    "nivel": "Sênior",
+    "pagina": 99,
+    "enunciado": "Implementar retry estratégico apenas para falhas de infraestrutura",
+    "dica": "Retry cego mascara bugs — retry inteligente evita flakiness",
+    "arquivo": "playwright/exercicios/web/senior/exercicio_085_p99.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "086",
+    "nivel": "Sênior",
+    "pagina": 99,
+    "enunciado": "Configurar Playwright em monorepo com múltiplos projetos",
+    "dica": "Use workspaces do npm/yarn + playwright.config por projeto",
+    "arquivo": "playwright/exercicios/web/senior/exercicio_086_p99.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "087",
+    "nivel": "Sênior",
+    "pagina": 100,
+    "enunciado": "Implementar Page Object com herança para componentes compartilhados",
+    "dica": "Components comuns (header, modal, toast) em classe base",
+    "arquivo": "playwright/exercicios/web/senior/exercicio_087_p100.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "088",
+    "nivel": "Sênior",
+    "pagina": 101,
+    "enunciado": "Medir e validar performance de carregamento de página",
+    "dica": "Use window.performance.timing via evaluate()",
+    "arquivo": "playwright/exercicios/web/senior/exercicio_088_p101.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "089",
+    "nivel": "Sênior",
+    "pagina": 102,
+    "enunciado": "Criar smoke test suite executada em < 2 minutos",
+    "dica": "Smoke rápido = feedback rápido no pipeline",
+    "arquivo": "playwright/exercicios/web/senior/exercicio_089_p102.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "090",
+    "nivel": "Sênior",
+    "pagina": 103,
+    "enunciado": "Integrar testes com Slack notification no pipeline",
+    "dica": "Notifique o time automaticamente com resultado e link",
+    "arquivo": "playwright/exercicios/web/senior/exercicio_090_p103.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "091",
+    "nivel": "Sênior",
+    "pagina": 104,
+    "enunciado": "Implementar helper de limpeza de dados pós-teste",
+    "dica": "Testes que criam dados devem limpar depois (teardown)",
+    "arquivo": "playwright/exercicios/web/senior/exercicio_091_p104.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "092",
+    "nivel": "Sênior",
+    "pagina": 105,
+    "enunciado": "Validar conteúdo de PDF gerado pela aplicação",
+    "dica": "Use pdf-parse para extrair e verificar texto do PDF",
+    "arquivo": "playwright/exercicios/web/senior/exercicio_092_p105.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "093",
+    "nivel": "Sênior",
+    "pagina": 106,
+    "enunciado": "Criar relatório customizado com métricas de QA",
+    "dica": "Publique métricas além do pass/fail: tempo, cobertura, flakyness",
+    "arquivo": "playwright/exercicios/web/senior/exercicio_093_p106.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "094",
+    "nivel": "Sênior",
+    "pagina": 106,
+    "enunciado": "Testar fluxo de renovação de token JWT expirado",
+    "dica": "Simule expiração e verifique refresh automático",
+    "arquivo": "playwright/exercicios/web/senior/exercicio_094_p106.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "095",
+    "nivel": "Sênior",
+    "pagina": 107,
+    "enunciado": "Implementar teste de resiliência — simular falha de serviço externo",
+    "dica": "Use page.route para simular timeout ou erro de API",
+    "arquivo": "playwright/exercicios/web/senior/exercicio_095_p107.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "096",
+    "nivel": "Sênior",
+    "pagina": 107,
+    "enunciado": "Criar teste de fluxo crítico com gravação de trace",
+    "dica": "Trace é evidência + debug tool — habilite para testes críticos",
+    "arquivo": "playwright/exercicios/web/senior/exercicio_096_p107.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "097",
+    "nivel": "Sênior",
+    "pagina": 108,
+    "enunciado": "Medir taxa de flakiness e reportar no pipeline",
+    "dica": "Detecte testes instáveis antes que destruam a confiança da suite",
+    "arquivo": "playwright/exercicios/web/senior/exercicio_097_p108.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "098",
+    "nivel": "Sênior",
+    "pagina": 109,
+    "enunciado": "Documentar arquitetura do framework com diagrama em código",
+    "dica": "Mermaid no README — documentação que não envelhece",
+    "arquivo": "playwright/exercicios/web/senior/exercicio_098_p109.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "099",
+    "nivel": "Sênior",
+    "pagina": 110,
+    "enunciado": "Implementar teste de acessibilidade com relatório detalhado",
+    "dica": "WCAG 2.1 AA — obrigatório em sistemas governamentais e financeiros",
+    "arquivo": "playwright/exercicios/web/senior/exercicio_099_p110.spec.ts"
+  },
+  {
+    "categoria": "web",
+    "numero": "100",
+    "nivel": "Sênior",
+    "pagina": 111,
+    "enunciado": "Criar health check automatizado executado a cada 5 minutos",
+    "dica": "Monitoring + testing juntos — detecte problemas antes do usuário",
+    "arquivo": "playwright/exercicios/web/senior/exercicio_100_p111.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "001",
+    "nivel": "Júnior",
+    "pagina": 112,
+    "enunciado": "Fazer requisição GET e verificar status code 200",
+    "dica": "O básico — verificar que o endpoint existe e responde",
+    "arquivo": "playwright/exercicios/api/junior/exercicio_001_p112.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "002",
+    "nivel": "Júnior",
+    "pagina": 112,
+    "enunciado": "Verificar Content-Type do header de resposta",
+    "dica": "APIs JSON devem retornar application/json",
+    "arquivo": "playwright/exercicios/api/junior/exercicio_002_p112.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "003",
+    "nivel": "Júnior",
+    "pagina": 113,
+    "enunciado": "Verificar campos obrigatórios no body da resposta",
+    "dica": "Use toHaveProperty() para verificar estrutura",
+    "arquivo": "playwright/exercicios/api/junior/exercicio_003_p113.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "004",
+    "nivel": "Júnior",
+    "pagina": 113,
+    "enunciado": "Fazer POST e verificar status 201",
+    "dica": "Criação de recurso deve retornar 201 Created",
+    "arquivo": "playwright/exercicios/api/junior/exercicio_004_p113.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "005",
+    "nivel": "Júnior",
+    "pagina": 113,
+    "enunciado": "Verificar que ID retornado no POST é string ou número",
+    "dica": "Valide o tipo do dado, não só a existência",
+    "arquivo": "playwright/exercicios/api/junior/exercicio_005_p113.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "006",
+    "nivel": "Júnior",
+    "pagina": 114,
+    "enunciado": "Fazer PUT e verificar status 200 + campo atualizado",
+    "dica": "Atualização completa do recurso",
+    "arquivo": "playwright/exercicios/api/junior/exercicio_006_p114.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "007",
+    "nivel": "Júnior",
+    "pagina": 114,
+    "enunciado": "Fazer PATCH e verificar apenas o campo alterado",
+    "dica": "PATCH = atualização parcial, não substitui o recurso inteiro",
+    "arquivo": "playwright/exercicios/api/junior/exercicio_007_p114.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "008",
+    "nivel": "Júnior",
+    "pagina": 114,
+    "enunciado": "Fazer DELETE e verificar status 204",
+    "dica": "Delete bem-sucedido não tem body — só status",
+    "arquivo": "playwright/exercicios/api/junior/exercicio_008_p114.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "009",
+    "nivel": "Júnior",
+    "pagina": 115,
+    "enunciado": "Verificar que GET com ID inexistente retorna 404",
+    "dica": "Teste negativo — recursos inexistentes devem retornar 404",
+    "arquivo": "playwright/exercicios/api/junior/exercicio_009_p115.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "010",
+    "nivel": "Júnior",
+    "pagina": 115,
+    "enunciado": "Verificar que POST sem body retorna erro de validação",
+    "dica": "400 ou 422 — depende da implementação da API",
+    "arquivo": "playwright/exercicios/api/junior/exercicio_010_p115.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "011",
+    "nivel": "Júnior",
+    "pagina": 115,
+    "enunciado": "Verificar paginação — total_pages e per_page",
+    "dica": "Dados de paginação são contratos importantes",
+    "arquivo": "playwright/exercicios/api/junior/exercicio_011_p115.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "012",
+    "nivel": "Júnior",
+    "pagina": 116,
+    "enunciado": "Verificar que lista retornada não está vazia",
+    "dica": "Dados mínimos esperados na listagem",
+    "arquivo": "playwright/exercicios/api/junior/exercicio_012_p116.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "013",
+    "nivel": "Júnior",
+    "pagina": 116,
+    "enunciado": "Verificar formato do campo email na resposta",
+    "dica": "Valide padrão de dados com regex",
+    "arquivo": "playwright/exercicios/api/junior/exercicio_013_p116.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "014",
+    "nivel": "Júnior",
+    "pagina": 116,
+    "enunciado": "Verificar que response time está dentro do SLA",
+    "dica": "Performance básica de API — todos devem fazer isso",
+    "arquivo": "playwright/exercicios/api/junior/exercicio_014_p116.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "015",
+    "nivel": "Júnior",
+    "pagina": 117,
+    "enunciado": "Verificar autenticação — endpoint sem token retorna 401",
+    "dica": "Teste de segurança básico — nunca pule",
+    "arquivo": "playwright/exercicios/api/junior/exercicio_015_p117.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "016",
+    "nivel": "Júnior",
+    "pagina": 117,
+    "enunciado": "Testar login e capturar token JWT",
+    "dica": "Fluxo de autenticação completo",
+    "arquivo": "playwright/exercicios/api/junior/exercicio_016_p117.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "017",
+    "nivel": "Júnior",
+    "pagina": 117,
+    "enunciado": "Testar login com credenciais inválidas — 400",
+    "dica": "Sempre teste o caminho de erro",
+    "arquivo": "playwright/exercicios/api/junior/exercicio_017_p117.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "018",
+    "nivel": "Júnior",
+    "pagina": 118,
+    "enunciado": "Verificar header de segurança X-Content-Type-Options",
+    "dica": "Headers de segurança são parte do contrato da API",
+    "arquivo": "playwright/exercicios/api/junior/exercicio_018_p118.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "019",
+    "nivel": "Júnior",
+    "pagina": 118,
+    "enunciado": "Verificar que IDs são únicos na listagem",
+    "dica": "Integridade de dados — duplicatas indicam bug sério",
+    "arquivo": "playwright/exercicios/api/junior/exercicio_019_p118.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "020",
+    "nivel": "Júnior",
+    "pagina": 118,
+    "enunciado": "Verificar que dados retornados batem com o filtro enviado",
+    "dica": "Se enviei page=2, os dados devem ser da página 2",
+    "arquivo": "playwright/exercicios/api/junior/exercicio_020_p118.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "021",
+    "nivel": "Pleno",
+    "pagina": 119,
+    "enunciado": "Implementar fluxo CRUD completo em um único contexto de teste",
+    "dica": "Create",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_021_p119.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "022",
+    "nivel": "Pleno",
+    "pagina": 120,
+    "enunciado": "Testar rate limiting — muitas requisições retornam 429",
+    "dica": "Verificar que a API tem proteção contra abuso",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_022_p120.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "023",
+    "nivel": "Pleno",
+    "pagina": 121,
+    "enunciado": "Validar contrato com JSON Schema (Ajv)",
+    "dica": "Schema validation é teste de contrato — não apenas de conteúdo",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_023_p121.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "024",
+    "nivel": "Pleno",
+    "pagina": 122,
+    "enunciado": "Testar endpoint de busca com query parameters",
+    "dica": "Valide filtros, ordenação e busca textual",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_024_p122.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "025",
+    "nivel": "Pleno",
+    "pagina": 123,
+    "enunciado": "Testar upload de arquivo via API multipart/form-data",
+    "dica": "APIs de upload têm validações específicas de tipo e tamanho",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_025_p123.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "026",
+    "nivel": "Pleno",
+    "pagina": 124,
+    "enunciado": "Verificar que API rejeita tipos de arquivo não permitidos",
+    "dica": "Segurança: bloquear extensões perigosas",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_026_p124.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "027",
+    "nivel": "Pleno",
+    "pagina": 125,
+    "enunciado": "Testar campos com injeção SQL nos parâmetros",
+    "dica": "Segurança básica — API não deve vazar dados nem crashar",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_027_p125.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "028",
+    "nivel": "Pleno",
+    "pagina": 126,
+    "enunciado": "Testar campos com XSS nos parâmetros de entrada",
+    "dica": "API não deve refletir scripts sem sanitização",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_028_p126.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "029",
+    "nivel": "Pleno",
+    "pagina": 127,
+    "enunciado": "Verificar idempotência do método PUT",
+    "dica": "PUT idempotente: chamadas repetidas devem ter mesmo efeito",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_029_p127.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "030",
+    "nivel": "Pleno",
+    "pagina": 127,
+    "enunciado": "Testar concorrência — 2 requisições simultâneas para o mesmo recurso",
+    "dica": "Race conditions são bugs difíceis de reproduzir",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_030_p127.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "031",
+    "nivel": "Pleno",
+    "pagina": 128,
+    "enunciado": "Testar versionamento de API — v1 e v2 coexistem",
+    "dica": "Breaking changes exigem nova versão — valide que ambas funcionam",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_031_p128.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "032",
+    "nivel": "Pleno",
+    "pagina": 129,
+    "enunciado": "Testar cabeçalho de depreciação em versão antiga",
+    "dica": "APIs boas avisam antes de quebrar — verifique o header Deprecation",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_032_p129.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "033",
+    "nivel": "Pleno",
+    "pagina": 130,
+    "enunciado": "Testar endpoint de health check da aplicação",
+    "dica": "Health check é o primeiro teste a rodar no monitoramento",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_033_p130.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "034",
+    "nivel": "Pleno",
+    "pagina": 131,
+    "enunciado": "Testar header de cache — ETag e Cache-Control",
+    "dica": "Cache mal configurado = dados desatualizados para o usuário",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_034_p131.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "035",
+    "nivel": "Pleno",
+    "pagina": 132,
+    "enunciado": "Testar CORS — origens permitidas e bloqueadas",
+    "dica": "CORS mal configurado = vulnerabilidade de segurança",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_035_p132.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "036",
+    "nivel": "Pleno",
+    "pagina": 133,
+    "enunciado": "Testar Content Negotiation — JSON vs XML",
+    "dica": "API que suporta múltiplos formatos deve respeitar Accept header",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_036_p133.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "037",
+    "nivel": "Pleno",
+    "pagina": 134,
+    "enunciado": "Testar bulk operations — criar múltiplos recursos de uma vez",
+    "dica": "Bulk endpoints têm regras de validação específicas",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_037_p134.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "038",
+    "nivel": "Pleno",
+    "pagina": 135,
+    "enunciado": "Verificar que soft delete não remove do banco mas esconde da API",
+    "dica": "Soft delete é contrato de API — recurso deletado não aparece em GET",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_038_p135.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "039",
+    "nivel": "Pleno",
+    "pagina": 136,
+    "enunciado": "Testar endpoint de busca com operadores avançados",
+    "dica": "Busca textual com operadores deve retornar resultados precisos",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_039_p136.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "040",
+    "nivel": "Pleno",
+    "pagina": 137,
+    "enunciado": "Testar webhook — endpoint que recebe eventos externos",
+    "dica": "Webhooks têm assinatura HMAC — valide a segurança",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_040_p137.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "041",
+    "nivel": "Pleno",
+    "pagina": 138,
+    "enunciado": "Verificar que webhook rejeita assinatura inválida",
+    "dica": "Segurança do webhook — payload sem assinatura deve ser rejeitado",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_041_p138.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "042",
+    "nivel": "Pleno",
+    "pagina": 139,
+    "enunciado": "Testar endpoint de exportação assíncrona com polling",
+    "dica": "Exports grandes são assíncronos — poll até concluir",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_042_p139.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "043",
+    "nivel": "Pleno",
+    "pagina": 140,
+    "enunciado": "Testar payload com campos extras (should be ignored)",
+    "dica": "API robusta ignora campos desconhecidos sem erro",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_043_p140.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "044",
+    "nivel": "Pleno",
+    "pagina": 140,
+    "enunciado": "Testar limites de tamanho de payload",
+    "dica": "Payloads muito grandes devem ser rejeitados — 413 Payload Too Large",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_044_p140.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "045",
+    "nivel": "Pleno",
+    "pagina": 141,
+    "enunciado": "Testar comportamento com Accept-Language header",
+    "dica": "APIs internacionalizadas devem responder no idioma correto",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_045_p141.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "046",
+    "nivel": "Pleno",
+    "pagina": 142,
+    "enunciado": "Testar endpoint com filtros de data em ISO 8601",
+    "dica": "Formato de data é contrato — aceitar só ISO 8601",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_046_p142.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "047",
+    "nivel": "Pleno",
+    "pagina": 143,
+    "enunciado": "Testar rate limiting com header Retry-After",
+    "dica": "Quando 429, API deve informar quando tentar de novo",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_047_p143.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "048",
+    "nivel": "Pleno",
+    "pagina": 144,
+    "enunciado": "Testar endpoint de métricas/telemetria",
+    "dica": "Endpoint /metrics é padrão Prometheus — verifique formato",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_048_p144.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "049",
+    "nivel": "Pleno",
+    "pagina": 145,
+    "enunciado": "Verificar que API implementa HATEOAS (links de navegação)",
+    "dica": "HATEOAS é o nível 3 do modelo de maturidade REST",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_049_p145.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "050",
+    "nivel": "Pleno",
+    "pagina": 146,
+    "enunciado": "Verificar proteção contra SSRF em campos de URL",
+    "dica": "Server-Side Request Forgery — API não deve fazer requests para IPs internos",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_050_p146.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "051",
+    "nivel": "Pleno",
+    "pagina": 147,
+    "enunciado": "Testar autenticação por API Key no header",
+    "dica": "API Key é alternativa ao JWT — verifique todos os cenários",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_051_p147.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "052",
+    "nivel": "Pleno",
+    "pagina": 148,
+    "enunciado": "Testar endpoint de refresh token",
+    "dica": "JWT expira — o refresh não pode falhar",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_052_p148.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "053",
+    "nivel": "Pleno",
+    "pagina": 149,
+    "enunciado": "Verificar que refresh token não pode ser reutilizado",
+    "dica": "Refresh token rotation — segurança contra roubo de sessão",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_053_p149.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "054",
+    "nivel": "Pleno",
+    "pagina": 150,
+    "enunciado": "Testar GraphQL — query básica",
+    "dica": "GraphQL substitui múltiplos endpoints REST por um único /graphql",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_054_p150.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "055",
+    "nivel": "Pleno",
+    "pagina": 151,
+    "enunciado": "Testar GraphQL — mutation de criação",
+    "dica": "Mutations GraphQL modificam dados — mesmo cuidado que POST REST",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_055_p151.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "056",
+    "nivel": "Pleno",
+    "pagina": 152,
+    "enunciado": "Testar GraphQL — introspection desabilitada em produção",
+    "dica": "Introspection expõe toda a estrutura da API — deve estar off em prod",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_056_p152.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "057",
+    "nivel": "Pleno",
+    "pagina": 153,
+    "enunciado": "Testar WebSocket — conectar e receber mensagem",
+    "dica": "WebSockets para tempo real: chat, notificações, dashboard ao vivo",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_057_p153.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "058",
+    "nivel": "Pleno",
+    "pagina": 154,
+    "enunciado": "Testar idempotency key — evitar duplicação em pagamentos",
+    "dica": "Pagamentos com mesma Idempotency-Key não podem ser duplicados",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_058_p154.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "059",
+    "nivel": "Pleno",
+    "pagina": 155,
+    "enunciado": "Testar endpoint de auditoria — todas as ações são logadas",
+    "dica": "Compliance: toda ação sensível deve gerar log imutável",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_059_p155.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "060",
+    "nivel": "Pleno",
+    "pagina": 156,
+    "enunciado": "Testar que dados são mascarados em respostas de acordo com perfil",
+    "dica": "RBAC nos dados: usuário comum não vê CPF completo de outro",
+    "arquivo": "playwright/exercicios/api/pleno/exercicio_060_p156.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "031",
+    "nivel": "Sênior",
+    "pagina": 157,
+    "enunciado": "Testar fluxo OAuth2 Authorization Code completo",
+    "dica": "OAuth2 tem múltiplos passos — cada um deve ser validado",
+    "arquivo": "playwright/exercicios/api/senior/exercicio_031_p157.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "050",
+    "nivel": "Sênior",
+    "pagina": 158,
+    "enunciado": "Testar transferência PIX e verificar comprovante",
+    "dica": "Fluxo financeiro crítico — tolerância zero para erros",
+    "arquivo": "playwright/exercicios/api/senior/exercicio_050_p158.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "075",
+    "nivel": "Sênior",
+    "pagina": 159,
+    "enunciado": "Testar endpoint de exclusão de dados LGPD",
+    "dica": "LGPD Art. 18 — direito ao esquecimento deve ser testado",
+    "arquivo": "playwright/exercicios/api/senior/exercicio_075_p159.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "100",
+    "nivel": "Sênior",
+    "pagina": 160,
+    "enunciado": "Medir e validar SLA de todos os endpoints críticos",
+    "dica": "Qualidade não é só funcional — performance é requisito",
+    "arquivo": "playwright/exercicios/api/senior/exercicio_100_p160.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "032",
+    "nivel": "Sênior",
+    "pagina": 161,
+    "enunciado": "Implementar teste de contrato com Pact — Consumer",
+    "dica": "Consumer-Driven Contract Testing: consumer define o contrato",
+    "arquivo": "playwright/exercicios/api/senior/exercicio_032_p161.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "033",
+    "nivel": "Sênior",
+    "pagina": 162,
+    "enunciado": "Implementar teste de provider com Pact",
+    "dica": "Provider verifica que implementa o contrato do consumer",
+    "arquivo": "playwright/exercicios/api/senior/exercicio_033_p162.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "034",
+    "nivel": "Sênior",
+    "pagina": 163,
+    "enunciado": "Testar tolerância a falhas — circuit breaker",
+    "dica": "Circuit breaker: após N falhas, para de tentar por um tempo",
+    "arquivo": "playwright/exercicios/api/senior/exercicio_034_p163.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "035",
+    "nivel": "Sênior",
+    "pagina": 164,
+    "enunciado": "Testar timeout e retry com backoff exponencial",
+    "dica": "Retry sem backoff causa thundering herd — sempre use backoff",
+    "arquivo": "playwright/exercicios/api/senior/exercicio_035_p164.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "036",
+    "nivel": "Sênior",
+    "pagina": 165,
+    "enunciado": "Testar bulk delete com lista de IDs",
+    "dica": "Bulk delete tem regras específicas: IDs inválidos, parcial vs total",
+    "arquivo": "playwright/exercicios/api/senior/exercicio_036_p165.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "037",
+    "nivel": "Sênior",
+    "pagina": 166,
+    "enunciado": "Testar migração zero-downtime — API aceita ambas as versões de payload",
+    "dica": "Durante migração, API deve aceitar formato antigo E novo",
+    "arquivo": "playwright/exercicios/api/senior/exercicio_037_p166.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "038",
+    "nivel": "Sênior",
+    "pagina": 167,
+    "enunciado": "Testar que API registra X-Request-ID para rastreabilidade",
+    "dica": "Request ID é fundamental para correlacionar logs em produção",
+    "arquivo": "playwright/exercicios/api/senior/exercicio_038_p167.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "039",
+    "nivel": "Sênior",
+    "pagina": 168,
+    "enunciado": "Testar endpoint de renegociação de dívida/parcelamento",
+    "dica": "Regras de negócio financeiro complexas exigem cobertura ampla",
+    "arquivo": "playwright/exercicios/api/senior/exercicio_039_p168.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "040",
+    "nivel": "Sênior",
+    "pagina": 169,
+    "enunciado": "Testar comportamento da API quando banco de dados está lento",
+    "dica": "Simule latência no banco e verifique comportamento da API",
+    "arquivo": "playwright/exercicios/api/senior/exercicio_040_p169.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "041",
+    "nivel": "Sênior",
+    "pagina": 170,
+    "enunciado": "Testar que API suporta compressão gzip",
+    "dica": "Compressão reduz tráfego em 60-80% — deveria ser padrão",
+    "arquivo": "playwright/exercicios/api/senior/exercicio_041_p170.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "042",
+    "nivel": "Sênior",
+    "pagina": 171,
+    "enunciado": "Testar ordenação estável em listagens paginadas",
+    "dica": "Paginação com ordenação inconsistente duplica e perde registros",
+    "arquivo": "playwright/exercicios/api/senior/exercicio_042_p171.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "043",
+    "nivel": "Sênior",
+    "pagina": 172,
+    "enunciado": "Testar que API retorna 405 para métodos não permitidos",
+    "dica": "Method Not Allowed deve ter header Allow com métodos suportados",
+    "arquivo": "playwright/exercicios/api/senior/exercicio_043_p172.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "044",
+    "nivel": "Sênior",
+    "pagina": 173,
+    "enunciado": "Criar helper de autenticação reutilizável para toda a suite",
+    "dica": "DRY no setup de autenticação — toda a suite usa o mesmo helper",
+    "arquivo": "playwright/exercicios/api/senior/exercicio_044_p173.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "045",
+    "nivel": "Sênior",
+    "pagina": 174,
+    "enunciado": "Testar proteção contra enumeração de usuários",
+    "dica": "Timing attack: não revelar se email existe via tempo de resposta",
+    "arquivo": "playwright/exercicios/api/senior/exercicio_045_p174.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "046",
+    "nivel": "Sênior",
+    "pagina": 175,
+    "enunciado": "Testar que campos de senha nunca aparecem em respostas",
+    "dica": "Password field leaking é falha gravíssima de segurança",
+    "arquivo": "playwright/exercicios/api/senior/exercicio_046_p175.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "047",
+    "nivel": "Sênior",
+    "pagina": 176,
+    "enunciado": "Testar limite de requisições por IP (throttling)",
+    "dica": "Throttling por IP protege contra DDoS e ataques de força bruta",
+    "arquivo": "playwright/exercicios/api/senior/exercicio_047_p176.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "048",
+    "nivel": "Sênior",
+    "pagina": 177,
+    "enunciado": "Testar compressão e desempenho em payload grande",
+    "dica": "Performance com dados reais — não apenas dados de teste mínimos",
+    "arquivo": "playwright/exercicios/api/senior/exercicio_048_p177.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "049",
+    "nivel": "Sênior",
+    "pagina": 178,
+    "enunciado": "Testar API com certificado mTLS (mutual TLS)",
+    "dica": "mTLS é padrão em sistemas financeiros B2B",
+    "arquivo": "playwright/exercicios/api/senior/exercicio_049_p178.spec.ts"
+  },
+  {
+    "categoria": "api",
+    "numero": "050",
+    "nivel": "Sênior",
+    "pagina": 179,
+    "enunciado": "Testar API de notificações — preferências do usuário respeitadas",
+    "dica": "Opt-out de notificações deve ser respeitado pela API",
+    "arquivo": "playwright/exercicios/api/senior/exercicio_050_p179.spec.ts"
+  },
+  {
+    "categoria": "sql",
+    "numero": "001",
+    "nivel": "Júnior",
+    "pagina": 180,
+    "enunciado": "Selecionar todos os usuários ativos",
+    "dica": "Básico — mas teste o WHERE sempre",
+    "arquivo": "exercicios/sql/junior/exercicio_001_p180.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "002",
+    "nivel": "Júnior",
+    "pagina": 180,
+    "enunciado": "Verificar se um usuário específico foi criado após cadastro",
+    "dica": "Use email como chave de busca — ID pode ser sequencial",
+    "arquivo": "exercicios/sql/junior/exercicio_002_p180.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "003",
+    "nivel": "Júnior",
+    "pagina": 181,
+    "enunciado": "Contar quantos registros existem em uma tabela",
+    "dica": "Validação de quantidade antes e depois de ação",
+    "arquivo": "exercicios/sql/junior/exercicio_003_p181.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "004",
+    "nivel": "Júnior",
+    "pagina": 181,
+    "enunciado": "Verificar que não há emails duplicados na tabela",
+    "dica": "Restrição de unicidade deve ser testada",
+    "arquivo": "exercicios/sql/junior/exercicio_004_p181.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "005",
+    "nivel": "Júnior",
+    "pagina": 181,
+    "enunciado": "Buscar os 10 registros mais recentes",
+    "dica": "Use ORDER BY + LIMIT para dados recentes",
+    "arquivo": "exercicios/sql/junior/exercicio_005_p181.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "006",
+    "nivel": "Júnior",
+    "pagina": 182,
+    "enunciado": "Verificar pedido após criação via sistema",
+    "dica": "Valide todos os campos do pedido, não só o ID",
+    "arquivo": "exercicios/sql/junior/exercicio_006_p182.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "007",
+    "nivel": "Júnior",
+    "pagina": 182,
+    "enunciado": "Verificar saldo de conta após transação",
+    "dica": "Dado financeiro — precisão decimal importa",
+    "arquivo": "exercicios/sql/junior/exercicio_007_p182.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "008",
+    "nivel": "Júnior",
+    "pagina": 183,
+    "enunciado": "Buscar registros de log de auditoria de uma ação",
+    "dica": "Toda ação crítica deve gerar log — valide no banco",
+    "arquivo": "exercicios/sql/junior/exercicio_008_p183.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "009",
+    "nivel": "Júnior",
+    "pagina": 183,
+    "enunciado": "Verificar que registro foi removido após delete",
+    "dica": "Soft delete (is_deleted=true) vs hard delete",
+    "arquivo": "exercicios/sql/junior/exercicio_009_p183.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "010",
+    "nivel": "Júnior",
+    "pagina": 184,
+    "enunciado": "Calcular valor total de pedidos por status",
+    "dica": "GROUP BY + SUM — relatórios de negócio",
+    "arquivo": "exercicios/sql/junior/exercicio_010_p184.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "011",
+    "nivel": "Júnior",
+    "pagina": 184,
+    "enunciado": "Verificar dados de endereço após cadastro",
+    "dica": "JOINs são essenciais para validar dados relacionados",
+    "arquivo": "exercicios/sql/junior/exercicio_011_p184.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "012",
+    "nivel": "Júnior",
+    "pagina": 185,
+    "enunciado": "Verificar que trigger de estoque funcionou",
+    "dica": "Após venda, estoque deve ter diminuído",
+    "arquivo": "exercicios/sql/junior/exercicio_012_p185.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "013",
+    "nivel": "Júnior",
+    "pagina": 185,
+    "enunciado": "Listar usuários sem nenhum pedido (LEFT JOIN)",
+    "dica": "LEFT JOIN é fundamental para encontrar ausências",
+    "arquivo": "exercicios/sql/junior/exercicio_013_p185.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "014",
+    "nivel": "Júnior",
+    "pagina": 186,
+    "enunciado": "Verificar que senha está armazenada como hash (não plain text)",
+    "dica": "Segurança básica — senha nunca deve ser legível",
+    "arquivo": "exercicios/sql/junior/exercicio_014_p186.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "015",
+    "nivel": "Júnior",
+    "pagina": 186,
+    "enunciado": "Verificar integridade referencial — FK válida",
+    "dica": "Pedido deve sempre ter um usuário válido",
+    "arquivo": "exercicios/sql/junior/exercicio_015_p186.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "016",
+    "nivel": "Júnior",
+    "pagina": 186,
+    "enunciado": "Buscar registros criados em um intervalo de datas",
+    "dica": "BETWEEN para range de datas",
+    "arquivo": "exercicios/sql/junior/exercicio_016_p186.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "017",
+    "nivel": "Júnior",
+    "pagina": 187,
+    "enunciado": "Verificar que CPF não foi salvo com máscara",
+    "dica": "CPF no banco deve ser só números — sem pontos/traços",
+    "arquivo": "exercicios/sql/junior/exercicio_017_p187.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "018",
+    "nivel": "Júnior",
+    "pagina": 187,
+    "enunciado": "Calcular percentual de pedidos por status",
+    "dica": "Métricas de negócio calculadas direto no banco",
+    "arquivo": "exercicios/sql/junior/exercicio_018_p187.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "019",
+    "nivel": "Júnior",
+    "pagina": 187,
+    "enunciado": "Verificar que e-mail está em minúsculas",
+    "dica": "Normalização de dados — case sensitivity em buscas",
+    "arquivo": "exercicios/sql/junior/exercicio_019_p187.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "020",
+    "nivel": "Júnior",
+    "pagina": 188,
+    "enunciado": "Buscar o último login de cada usuário",
+    "dica": "Subconsulta ou window function",
+    "arquivo": "exercicios/sql/junior/exercicio_020_p188.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "021",
+    "nivel": "Pleno",
+    "pagina": 188,
+    "enunciado": "Detectar registros duplicados com critério composto",
+    "dica": "Duplicata por nome + CPF — não só por campo único",
+    "arquivo": "exercicios/sql/pleno/exercicio_021_p188.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "022",
+    "nivel": "Pleno",
+    "pagina": 188,
+    "enunciado": "Verificar conciliação financeira — débitos = créditos",
+    "dica": "Regra contábil fundamental em sistemas financeiros",
+    "arquivo": "exercicios/sql/pleno/exercicio_022_p188.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "023",
+    "nivel": "Pleno",
+    "pagina": 189,
+    "enunciado": "Verificar ranking dos 5 clientes que mais compraram",
+    "dica": "Window functions — RANK() e DENSE_RANK()",
+    "arquivo": "exercicios/sql/pleno/exercicio_023_p189.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "024",
+    "nivel": "Pleno",
+    "pagina": 189,
+    "enunciado": "Verificar que dados sensíveis estão mascarados",
+    "dica": "LGPD — PII deve estar protegido em logs e relatórios",
+    "arquivo": "exercicios/sql/pleno/exercicio_024_p189.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "025",
+    "nivel": "Pleno",
+    "pagina": 190,
+    "enunciado": "Calcular churn mensal de clientes",
+    "dica": "Métrica de negócio que QA pode validar diretamente",
+    "arquivo": "exercicios/sql/pleno/exercicio_025_p190.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "041",
+    "nivel": "Sênior",
+    "pagina": 191,
+    "enunciado": "Detectar anomalia: transação acima do limite diário",
+    "dica": "Regras de negócio financeiro validadas em SQL",
+    "arquivo": "exercicios/sql/senior/exercicio_041_p191.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "042",
+    "nivel": "Sênior",
+    "pagina": 191,
+    "enunciado": "Verificar SLA de processamento — tempo médio por etapa",
+    "dica": "Performance de processos batch",
+    "arquivo": "exercicios/sql/senior/exercicio_042_p191.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "043",
+    "nivel": "Sênior",
+    "pagina": 192,
+    "enunciado": "Identificar gargalo em fila de processamento",
+    "dica": "Mensagens antigas na fila = problema de performance",
+    "arquivo": "exercicios/sql/senior/exercicio_043_p192.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "044",
+    "nivel": "Sênior",
+    "pagina": 192,
+    "enunciado": "Verificar integridade de dados em migração",
+    "dica": "Após migração, count + checksum devem bater",
+    "arquivo": "exercicios/sql/senior/exercicio_044_p192.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "045",
+    "nivel": "Sênior",
+    "pagina": 193,
+    "enunciado": "Verificar snapshots de dados para testes de regressão",
+    "dica": "Comparar estado atual com estado esperado via tabela de referência",
+    "arquivo": "exercicios/sql/senior/exercicio_045_p193.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "046",
+    "nivel": "Sênior",
+    "pagina": 194,
+    "enunciado": "Detectar usuários com comportamento suspeito (possível fraude)",
+    "dica": "Padrões de fraude detectáveis via SQL",
+    "arquivo": "exercicios/sql/senior/exercicio_046_p194.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "047",
+    "nivel": "Sênior",
+    "pagina": 194,
+    "enunciado": "Verificar consistência de estoque após batch de vendas",
+    "dica": "Estoque não pode ficar negativo — integridade de negócio",
+    "arquivo": "exercicios/sql/senior/exercicio_047_p194.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "048",
+    "nivel": "Sênior",
+    "pagina": 195,
+    "enunciado": "Analisar performance de query com EXPLAIN ANALYZE",
+    "dica": "QA sênior identifica queries lentas antes de ir para produção",
+    "arquivo": "exercicios/sql/senior/exercicio_048_p195.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "049",
+    "nivel": "Sênior",
+    "pagina": 196,
+    "enunciado": "Criar procedure de limpeza de dados de teste",
+    "dica": "Nunca deixe dados de teste em produção",
+    "arquivo": "exercicios/sql/senior/exercicio_049_p196.sql"
+  },
+  {
+    "categoria": "sql",
+    "numero": "050",
+    "nivel": "Sênior",
+    "pagina": 197,
+    "enunciado": "Criar view de monitoramento de saúde do banco",
+    "dica": "View que o time de QA pode consultar a qualquer momento",
+    "arquivo": "exercicios/sql/senior/exercicio_050_p197.sql"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "001",
+    "nivel": "Júnior",
+    "pagina": 198,
+    "enunciado": "Abrir o app e verificar que a tela inicial carregou",
+    "dica": "Smoke test mobile — o mais básico de todos",
+    "arquivo": "exercicios/mobile/junior/test_exercicio_001_p198.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "002",
+    "nivel": "Júnior",
+    "pagina": 199,
+    "enunciado": "Fazer login no app com credenciais válidas",
+    "dica": "Fluxo crítico — deve estar no smoke test",
+    "arquivo": "exercicios/mobile/junior/test_exercicio_002_p199.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "003",
+    "nivel": "Júnior",
+    "pagina": 199,
+    "enunciado": "Verificar texto de um elemento na tela",
+    "dica": "Use get_attribute('text') para Android",
+    "arquivo": "exercicios/mobile/junior/test_exercicio_003_p199.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "004",
+    "nivel": "Júnior",
+    "pagina": 199,
+    "enunciado": "Clicar em botão e verificar navegação para nova tela",
+    "dica": "Navegação é um dos fluxos mais testados em mobile",
+    "arquivo": "exercicios/mobile/junior/test_exercicio_004_p199.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "005",
+    "nivel": "Júnior",
+    "pagina": 200,
+    "enunciado": "Preencher formulário e submeter",
+    "dica": "Fluxo completo de cadastro mobile",
+    "arquivo": "exercicios/mobile/junior/test_exercicio_005_p200.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "006",
+    "nivel": "Júnior",
+    "pagina": 200,
+    "enunciado": "Fazer scroll vertical para baixo",
+    "dica": "Scroll é uma das interações mais comuns em mobile",
+    "arquivo": "exercicios/mobile/junior/test_exercicio_006_p200.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "007",
+    "nivel": "Júnior",
+    "pagina": 201,
+    "enunciado": "Verificar se app está em foreground (ativo)",
+    "dica": "Estado do app — útil em testes de background/foreground",
+    "arquivo": "exercicios/mobile/junior/test_exercicio_007_p201.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "008",
+    "nivel": "Júnior",
+    "pagina": 201,
+    "enunciado": "Rotacionar device para landscape e verificar layout",
+    "dica": "Orientação é requisito de qualidade para mobile",
+    "arquivo": "exercicios/mobile/junior/test_exercicio_008_p201.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "009",
+    "nivel": "Júnior",
+    "pagina": 201,
+    "enunciado": "Verificar comportamento ao pressionar botão Voltar",
+    "dica": "Botão back é específico do Android — sempre teste",
+    "arquivo": "exercicios/mobile/junior/test_exercicio_009_p201.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "010",
+    "nivel": "Júnior",
+    "pagina": 202,
+    "enunciado": "Verificar que campo de senha oculta os caracteres",
+    "dica": "Segurança visual — campo senha deve ter input type password",
+    "arquivo": "exercicios/mobile/junior/test_exercicio_010_p202.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "011",
+    "nivel": "Júnior",
+    "pagina": 202,
+    "enunciado": "Verificar deep link abre tela correta",
+    "dica": "Deep links são críticos para notificações e marketing",
+    "arquivo": "exercicios/mobile/junior/test_exercicio_011_p202.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "012",
+    "nivel": "Júnior",
+    "pagina": 202,
+    "enunciado": "Tirar screenshot e salvar como evidência",
+    "dica": "Evidências são obrigatórias em QA mobile",
+    "arquivo": "exercicios/mobile/junior/test_exercicio_012_p202.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "013",
+    "nivel": "Júnior",
+    "pagina": 203,
+    "enunciado": "Verificar que teclado aparece ao focar em campo de texto",
+    "dica": "Teclado nativo pode cobrir elementos — teste sempre",
+    "arquivo": "exercicios/mobile/junior/test_exercicio_013_p203.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "014",
+    "nivel": "Júnior",
+    "pagina": 203,
+    "enunciado": "Verificar mensagem de erro ao submeter formulário vazio",
+    "dica": "Validação de campos obrigatórios",
+    "arquivo": "exercicios/mobile/junior/test_exercicio_014_p203.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "015",
+    "nivel": "Júnior",
+    "pagina": 204,
+    "enunciado": "Verificar que app persiste dados após fechar e reabrir",
+    "dica": "Persistência local — SharedPreferences, SQLite, Room",
+    "arquivo": "exercicios/mobile/junior/test_exercicio_015_p204.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "016",
+    "nivel": "Pleno",
+    "pagina": 205,
+    "enunciado": "Simular localização GPS e verificar funcionalidade",
+    "dica": "GPS é permissão crítica — simule coordenadas reais",
+    "arquivo": "exercicios/mobile/pleno/test_exercicio_016_p205.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "017",
+    "nivel": "Pleno",
+    "pagina": 205,
+    "enunciado": "Simular biometria (fingerprint) bem-sucedida",
+    "dica": "Biometria: fingerId entre 1-10",
+    "arquivo": "exercicios/mobile/pleno/test_exercicio_017_p205.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "018",
+    "nivel": "Pleno",
+    "pagina": 206,
+    "enunciado": "Testar swipe em carrossel de imagens",
+    "dica": "Carrosseis são componentes com bugs frequentes",
+    "arquivo": "exercicios/mobile/pleno/test_exercicio_018_p206.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "019",
+    "nivel": "Pleno",
+    "pagina": 206,
+    "enunciado": "Verificar comportamento em modo avião",
+    "dica": "Apps devem ter UX de offline — não só crash",
+    "arquivo": "exercicios/mobile/pleno/test_exercicio_019_p206.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "020",
+    "nivel": "Pleno",
+    "pagina": 207,
+    "enunciado": "Testar recebimento de push notification",
+    "dica": "Notificações têm payload — verifique conteúdo e ação",
+    "arquivo": "exercicios/mobile/pleno/test_exercicio_020_p207.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "025",
+    "nivel": "Pleno",
+    "pagina": 208,
+    "enunciado": "Testar performance de scroll em lista longa",
+    "dica": "Jank (travamento) em scroll é bug de UX sério",
+    "arquivo": "exercicios/mobile/pleno/test_exercicio_025_p208.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "035",
+    "nivel": "Sênior",
+    "pagina": 209,
+    "enunciado": "Testar permissão de câmera e captura de foto mock",
+    "dica": "Apps que usam câmera devem tratar permissão negada",
+    "arquivo": "exercicios/mobile/senior/test_exercicio_035_p209.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "050",
+    "nivel": "Sênior",
+    "pagina": 210,
+    "enunciado": "Criar suite completa de smoke test mobile em < 5 minutos",
+    "dica": "Smoke mobile = 10 testes críticos, sem flakiness, máximo 5min",
+    "arquivo": "exercicios/mobile/senior/test_exercicio_050_p210.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "021",
+    "nivel": "Pleno",
+    "pagina": 211,
+    "enunciado": "Testar login com autenticação biométrica falha",
+    "dica": "Biometria com ID errado deve redirecionar para senha",
+    "arquivo": "exercicios/mobile/pleno/test_exercicio_021_p211.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "022",
+    "nivel": "Pleno",
+    "pagina": 211,
+    "enunciado": "Verificar que app atualiza badge de notificação",
+    "dica": "Badge é contrato de UX — deve refletir contagem real",
+    "arquivo": "exercicios/mobile/pleno/test_exercicio_022_p211.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "023",
+    "nivel": "Pleno",
+    "pagina": 212,
+    "enunciado": "Testar gestos de pinch e zoom em mapa",
+    "dica": "Pinch/zoom são gestos multi-touch — use W3C Actions",
+    "arquivo": "exercicios/mobile/pleno/test_exercicio_023_p212.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "024",
+    "nivel": "Pleno",
+    "pagina": 213,
+    "enunciado": "Testar que app abre URL externa no browser padrão",
+    "dica": "Links externos não devem abrir dentro do app",
+    "arquivo": "exercicios/mobile/pleno/test_exercicio_024_p213.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "025",
+    "nivel": "Pleno",
+    "pagina": 214,
+    "enunciado": "Verificar consumo de bateria durante operações intensas",
+    "dica": "Apps que drenam bateria são desinstalados pelos usuários",
+    "arquivo": "exercicios/mobile/pleno/test_exercicio_025_p214.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "026",
+    "nivel": "Pleno",
+    "pagina": 215,
+    "enunciado": "Testar que app não crasha ao receber ligação durante uso",
+    "dica": "Interrupção por ligação é o cenário mais comum — e mais esquecido",
+    "arquivo": "exercicios/mobile/pleno/test_exercicio_026_p215.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "027",
+    "nivel": "Pleno",
+    "pagina": 216,
+    "enunciado": "Verificar que dados sensíveis não aparecem no recent apps",
+    "dica": "Recent apps screenshot pode vazar dados bancários e pessoais",
+    "arquivo": "exercicios/mobile/pleno/test_exercicio_027_p216.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "028",
+    "nivel": "Pleno",
+    "pagina": 217,
+    "enunciado": "Testar comportamento ao trocar de SIM card / eSIM",
+    "dica": "Apps de banco verificam SIM — troca deve acionar re-autenticação",
+    "arquivo": "exercicios/mobile/pleno/test_exercicio_028_p217.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "029",
+    "nivel": "Pleno",
+    "pagina": 218,
+    "enunciado": "Testar acessibilidade com TalkBack ativo",
+    "dica": "TalkBack lê conteúdo em voz alta — elementos devem ter labels",
+    "arquivo": "exercicios/mobile/pleno/test_exercicio_029_p218.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "030",
+    "nivel": "Pleno",
+    "pagina": 219,
+    "enunciado": "Testar que app funciona com tamanho de fonte acessível",
+    "dica": "Usuários com deficiência visual aumentam a fonte — layout não pode quebrar",
+    "arquivo": "exercicios/mobile/pleno/test_exercicio_030_p219.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "031",
+    "nivel": "Pleno",
+    "pagina": 220,
+    "enunciado": "Verificar que app limpa dados sensíveis da memória após logout",
+    "dica": "Tokens e senhas não podem persistir na memória após logout",
+    "arquivo": "exercicios/mobile/pleno/test_exercicio_031_p220.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "032",
+    "nivel": "Pleno",
+    "pagina": 221,
+    "enunciado": "Testar sincronização após reconectar à internet",
+    "dica": "Dados offline devem sincronizar automaticamente ao reconectar",
+    "arquivo": "exercicios/mobile/pleno/test_exercicio_032_p221.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "033",
+    "nivel": "Pleno",
+    "pagina": 222,
+    "enunciado": "Testar que app usa SSL pinning e rejeita certificado inválido",
+    "dica": "SSL Pinning protege contra ataques MITM em redes públicas",
+    "arquivo": "exercicios/mobile/pleno/test_exercicio_033_p222.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "034",
+    "nivel": "Pleno",
+    "pagina": 223,
+    "enunciado": "Testar que splash screen não bloqueia após cold start",
+    "dica": "Cold start com splash lento = usuário fecha o app",
+    "arquivo": "exercicios/mobile/pleno/test_exercicio_034_p223.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "036",
+    "nivel": "Sênior",
+    "pagina": 224,
+    "enunciado": "Implementar fixture de sessão compartilhada entre testes mobile",
+    "dica": "Login uma vez por sessão de testes — não repetir em cada teste",
+    "arquivo": "exercicios/mobile/senior/test_exercicio_036_p224.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "037",
+    "nivel": "Sênior",
+    "pagina": 225,
+    "enunciado": "Testar deep link com parâmetros de query string",
+    "dica": "Deep links com parâmetros são usados em campanhas e notificações",
+    "arquivo": "exercicios/mobile/senior/test_exercicio_037_p225.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "038",
+    "nivel": "Sênior",
+    "pagina": 226,
+    "enunciado": "Testar App Links (verificação de domínio Android)",
+    "dica": "App Links abrem o app diretamente — sem chooser dialog",
+    "arquivo": "exercicios/mobile/senior/test_exercicio_038_p226.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "039",
+    "nivel": "Sênior",
+    "pagina": 227,
+    "enunciado": "Implementar Page Object para telas mobile",
+    "dica": "POM não é só para web — mobile se beneficia igualmente",
+    "arquivo": "exercicios/mobile/senior/test_exercicio_039_p227.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "040",
+    "nivel": "Sênior",
+    "pagina": 228,
+    "enunciado": "Testar performance de startup com Perfetto/Systrace",
+    "dica": "Métricas de performance mobile requerem ferramentas nativas",
+    "arquivo": "exercicios/mobile/senior/test_exercicio_040_p228.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "041",
+    "nivel": "Sênior",
+    "pagina": 229,
+    "enunciado": "Testar comportamento do app com memória baixa",
+    "dica": "Android mata apps em segundo plano quando memória é baixa",
+    "arquivo": "exercicios/mobile/senior/test_exercicio_041_p229.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "042",
+    "nivel": "Sênior",
+    "pagina": 230,
+    "enunciado": "Testar atualização OTA — fluxo de update do app",
+    "dica": "In-app update é UX crítico — usuário não pode ficar preso",
+    "arquivo": "exercicios/mobile/senior/test_exercicio_042_p230.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "043",
+    "nivel": "Sênior",
+    "pagina": 231,
+    "enunciado": "Testar comportamento em modo escuro (Dark Mode)",
+    "dica": "Dark Mode é padrão esperado — elementos devem ser legíveis",
+    "arquivo": "exercicios/mobile/senior/test_exercicio_043_p231.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "044",
+    "nivel": "Sênior",
+    "pagina": 232,
+    "enunciado": "Testar que app não vaza dados via clipboard",
+    "dica": "Clipboard é compartilhado entre apps — dados sensíveis não devem ir lá",
+    "arquivo": "exercicios/mobile/senior/test_exercicio_044_p232.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "045",
+    "nivel": "Sênior",
+    "pagina": 233,
+    "enunciado": "Testar internacionalização — app em inglês e português",
+    "dica": "i18n mobile: verificar strings em múltiplos idiomas",
+    "arquivo": "exercicios/mobile/senior/test_exercicio_045_p233.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "046",
+    "nivel": "Sênior",
+    "pagina": 235,
+    "enunciado": "Testar que app funciona corretamente em tablet (large screen)",
+    "dica": "Apps de telefone em tablet: layout deve ser adaptado, não esticado",
+    "arquivo": "exercicios/mobile/senior/test_exercicio_046_p235.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "047",
+    "nivel": "Sênior",
+    "pagina": 236,
+    "enunciado": "Criar relatório HTML de execução mobile com screenshots",
+    "dica": "Evidências automáticas por screenshot em cada passo",
+    "arquivo": "exercicios/mobile/senior/test_exercicio_047_p236.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "048",
+    "nivel": "Sênior",
+    "pagina": 237,
+    "enunciado": "Testar compatibilidade com Android 12+ (granular media permissions)",
+    "dica": "Android 12+ mudou permissões de mídia — pode quebrar apps antigos",
+    "arquivo": "exercicios/mobile/senior/test_exercicio_048_p237.py"
+  },
+  {
+    "categoria": "mobile",
+    "numero": "049",
+    "nivel": "Sênior",
+    "pagina": 238,
+    "enunciado": "Testar analytics — eventos rastreados corretamente",
+    "dica": "Analytics mal implementados custam decisões de negócio erradas",
+    "arquivo": "exercicios/mobile/senior/test_exercicio_049_p238.py"
+  }
+]

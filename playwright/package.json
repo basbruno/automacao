@@ -1,0 +1,20 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "exercicios": "playwright test --config=playwright.exercicios.config.ts",
+    "exercicios:web": "npm run exercicios -- --project=web-chromium",
+    "exercicios:api": "npm run exercicios -- --project=api",
+    "exercicios:listar": "npm run exercicios -- --list"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5"
+  }
+}
